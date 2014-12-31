@@ -285,9 +285,9 @@
             <div class="master-mail">校长邮箱:<a href='mailto:dean_YNSF@163.com'>deanYNSF@163.com</a></div>
         </ion:page>
     </div>
-    <div style="margin-top:12px"><a href="#"><img src="<ion:theme_url />assets/images/an-01.gif" width="296" height="66" /></a></div>
+    <div style="margin-top:12px"><a href="<ion:page:url id='message' />"><img src="<ion:theme_url />assets/images/an-01.gif" width="296" height="66" /></a></div>
     <div style="margin-top:12px"><a href="<ion:page:url id='cjcx' />"><img src="<ion:theme_url />assets/images/an-03.gif" width="296" height="66" /></a></div>
-    <div style="margin-top:12px"><a href="#"><img src="<ion:theme_url />assets/images/an-02.gif" width="296" height="66" /></a></div>
+    <div style="margin-top:12px"><a href="<ion:page:url id='school-video' />"><img src="<ion:theme_url />assets/images/an-02.gif" width="296" height="66" /></a></div>
     <div class="main-an">
         <ion:page id="res-center">
             <div class="title-notice"><span><ion:title /></span><a class="notice_more" href="<ion:url />">MORE</a></div>

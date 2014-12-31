@@ -7,7 +7,7 @@
         <ion:article>
         <div class="sub_news">
                 <h1><ion:title /></h1>
-                <div class="view_info"><span>文章作者：<ion:writer:name /></span><span>信息来源：XXXXXXX</span><span>添加日期：<ion:date format="Y-m-d" /></span><span>浏览次数：<ion:view />次</span></div>
+                <div class="view_info"><span>文章作者：<ion:writer:name /></span><span>信息来源：</span><span>添加日期：<ion:date format="Y-m-d" /></span><span>浏览次数：次</span></div>
 
 
             <div class="news_view">

@@ -75,6 +75,7 @@
             },
             error: function(){
                 $('#messageContainer .error-message').text('数据查询错误').delay(800).fadeIn(500).fadeOut(1500);
+                $('#achieveScore').hide();
             }
         });
 
@@ -130,6 +131,7 @@
                     {
                         $('#messageContainer .error-message').text('没有该考生成绩')
                             .delay(800).fadeIn(500).fadeOut(2000);
+                        $('#achieveScore').hide();
                         return;
                     }
                     //clear old data
