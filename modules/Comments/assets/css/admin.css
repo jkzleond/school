@@ -1,0 +1,169 @@
+h2.main.comments {
+    background: url(../images/icon_40_module.png) no-repeat 0 0;
+}
+h2.main.comments-setting {
+    background: url(../images/icon_40_setting.png) no-repeat 0 0;
+}
+.icon.ip-block,
+.button i.ip-block,
+a.button i.icon-ip-block {
+    background: url(../images/icon_16_block.png) no-repeat 0 0;
+}
+.icon.ip-blocked,
+.button i.ip-blocked,
+a.button i.icon-ip-blocked {
+    background: url(../images/icon_16_blocked.png) no-repeat 0 0;
+}
+.icon.comments,
+.button i.comments,
+a.button i.icon-comments {
+    background: url(../images/icon_16_module.png) no-repeat 0 0;
+}
+.icon.comments-setting,
+.button i.comments-setting,
+a.button i.icon-comments-setting {
+    background: url(../images/icon_16_setting.png) no-repeat 0 0;
+}
+
+div.active .toolbar-button, div.active .light-button {
+    border:1px solid #bbb;
+    background-color: #fff !important;
+}
+
+.module-comments.btn-comments {
+    background: url(../images/icon_16_module.png) no-repeat 4px 50%;
+    padding-left: 24px
+}
+.module-comments.btn-setting {
+    background: url(../images/icon_16_setting.png) no-repeat 4px 50%;
+    padding-left: 24px
+}
+
+table.table-striped tbody > tr:nth-child(odd) > td,
+table.table-striped tbody > tr:nth-child(odd) > th {
+    background-color: #F5F5F5;
+}
+
+table.table-hover tbody > tr:hover > td,
+table.table-hover tbody > tr:hover > th {
+    background-color: #F5F5F5;
+}
+
+.badge {
+     display: inline-block;
+     min-width: 10px;
+     padding: 3px 7px;
+     font-size: 12px;
+     font-weight: bold;
+     color: #FFF;
+     line-height: 1;
+     vertical-align: baseline;
+     white-space: nowrap;
+     text-align: center;
+     background-color: #999999;
+     border-radius: 10px;
+}
+.badge:empty { display: none; }
+.badge-default { background-color: #999999; }
+.badge-primary { background-color: #428BCA; }
+.badge-success { background-color: #5CB85C; }
+.badge-info { background-color: #5BC0DE; }
+.badge-warning { background-color: #F0AD4E; }
+.badge-danger { background-color: #D9534F; }
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    /*font-size: 75%;*/
+    font-weight: bold;
+    line-height: 1;
+    color: #FFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.label:empty { display: none; }
+.label[href]:hover,
+.label[href]:focus {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.label-default { background-color: #999999; }
+.label-default[href]:hover,
+.label-default[href]:focus {
+    background-color: #7a7a7a;
+}
+
+.label-primary { background-color: #428BCA; }
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+    background-color: #3c7fb8;
+}
+
+.label-success { background-color: #5CB85C; }
+.label-success[href]:hover,
+.label-success[href]:focus {
+    background-color: #52a752;
+}
+
+.label-info { background-color: #5BC0DE; }
+.label-info[href]:hover,
+.label-info[href]:focus {
+    background-color: #54b0cc;
+}
+
+.label-warning { background-color: #F0AD4E; }
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+    background-color: #d89d46;
+}
+
+.label-danger { background-color: #D9534F; }
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+    background-color: #c84c49;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert h4 {
+    margin-top: 0;
+    color: inherit;
+}
+.alert .alert-link {
+    font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+    margin-bottom: 0;
+}
+.alert > p + p {
+    margin-top: 5px;
+}
+
+.alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #cbd9c5;
+}
+.alert-info {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #c6d8e1;
+}
+.alert-warning {
+    color: #c09853;
+    background-color: #fcf8e3;
+    border-color: #e4e1d1;
+}
+.alert-danger {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #dccacb;
+}

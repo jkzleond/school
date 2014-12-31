@@ -1,0 +1,90 @@
+h2.main.achievement {
+    background: url(../images/icon_40_module.png) no-repeat 0 0;
+}
+h2.main.students:before{background-position: -360px 0}
+h2.main.exams:before{background-position: -200px -120px}
+.achieve-table {
+    width:100%;
+}
+.achieve-table tr td{
+    border:1px solid #c8c8c8;
+    height:26px;
+    line-height:26px;
+}
+.achieve-table th{
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+}
+.achieve-table th,.achieve-table td{
+    width:5%;
+    font-size:12px;
+}
+.achieve-table th:last-child{
+    font-size:12px;
+}
+
+.achieve-table tr{
+    background-color:#e0e0e0;
+}
+.achieve-table tfoot td{
+    border: none;
+}
+.achieve-table input{
+    width:100%;
+    line-height:26px;
+    border:1px solid #3399cc;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 10px #ccc;
+    box-shadow: inset 0 0 10px #ccc;
+}
+.achieve-table input:focus{
+    -webkit-box-shadow: inset 0 0 10px #0099cc;
+    box-shadow: inset 0 0 10px #0099cc;
+}
+
+.achieve-table td.hover, .gray-focus:focus, tbody.row-hover-gray tr:hover td{
+    -webkit-box-shadow: inset 0 0 10px #033399;
+    box-shadow: inset 0 0 10px #033399;
+}
+
+input.search{
+    border: 0;
+    outline: 0;
+    border: 2px solid #ddd;
+    border-radius: 10%;
+}
+
+a.page{
+    display:inline-block;
+    width:26px;
+    height:26px;
+    text-align: center;
+    color: #3366cc;
+}
+
+a.page.active{
+    color: #3333cc;
+    font-size:16px;
+}
+
+.width-auto {
+    width:auto;
+}
+
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+
+.block{
+    display:block;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.hidden {
+    display:none;
+}

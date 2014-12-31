@@ -1,0 +1,82 @@
+<?php
+
+// legal URL: /tc_02.jpg
+
+$statdata = array (
+  0 => 2055,
+  1 => 5382542,
+  2 => 33206,
+  3 => 1,
+  4 => 1000,
+  5 => 1000,
+  6 => 0,
+  7 => 14878,
+  8 => 1419166662,
+  9 => 1419064483,
+  10 => 1419064483,
+  11 => 4096,
+  12 => 32,
+  'dev' => 2055,
+  'ino' => 5382542,
+  'mode' => 33206,
+  'nlink' => 1,
+  'uid' => 1000,
+  'gid' => 1000,
+  'rdev' => 0,
+  'size' => 14878,
+  'atime' => 1419166662,
+  'mtime' => 1419064483,
+  'ctime' => 1419064483,
+  'blksize' => 4096,
+  'blocks' => 32,
+);
+
+$data = array (
+  'mime_type' => 'image/jpeg',
+  'analysis' => 
+  array (
+    'GETID3_VERSION' => '1.9.3-20111213',
+    'filesize' => 14878,
+    'filename' => 'tc_02.jpg',
+    'filepath' => '/www/school/files',
+    'filenamepath' => '/www/school/files/tc_02.jpg',
+    'avdataoffset' => 0,
+    'avdataend' => 14878,
+    'fileformat' => 'jpg',
+    'video' => 
+    array (
+      'dataformat' => 'jpg',
+      'lossless' => false,
+      'bits_per_sample' => 24,
+      'pixel_aspect_ratio' => 1,
+      'resolution_x' => 154,
+      'resolution_y' => 224,
+      'compression_ratio' => 0.14376546072974644,
+    ),
+    'encoding' => 'UTF-8',
+    'mime_type' => 'image/jpeg',
+  ),
+  'mime_type from file extension' => 'image/jpeg',
+  'thumb250_direct' => '/files/.thumbs/.backend/34/da/926a_tc_027517e3b1076de2567c44d4ea-500x500.jpg',
+  'thumb250_info' => 
+  array (
+    0 => 154,
+    1 => 224,
+    2 => 2,
+    3 => 'width="154" height="224"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+  'thumb48_direct' => '/files/.thumbs/.backend/34/da/926a_tc_027517e3b1076de2567c44d4ea-120x120.jpg',
+  'thumb48_info' => 
+  array (
+    0 => 83,
+    1 => 120,
+    2 => 2,
+    3 => 'width="83" height="120"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+);

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sql>
+    <name></name>
+    <version></version>
+
+    <tables>
+        <query>
+            CREATE TABLE IF NOT EXISTS mod_achievement_grade (
+                id int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                name varchar(100) NOT NULL,
+                PRIMARY KEY (id)
+            )
+            ENGINE = InnoDB
+            AUTO_INCREMENT = 1
+            DEFAULT CHARSET = utf8
+            COLLATE = utf8_unicode_ci
+            COMMENT = '年级表';
+        </query>
+        <query>
+            CREATE TABLE IF NOT EXISTS mod_achievement_class (
+                id int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                name varchar(100) NOT NULL,
+                PRIMARY KEY (id)
+            )
+            ENGINE = InnoDB
+            AUTO_INCREMENT = 1
+            DEFAULT CHARSET = utf8
+            COLLATE = utf8_unicode_ci
+            COMMENT = '班级表';
+        </query>
+        <query>
+            CREATE TABLE IF NOT EXISTS mod_achievement_student (
+                id int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                number varchar(100) NOT NULL,
+                name varchar(100) NOT NULL,
+                grade_id int(11) UNSIGNED DEFAULT NULL,
+                class_id int(11) UNSIGNED DEFAULT NULL,
+                PRIMARY KEY (id),
+                UNIQUE KEY `number_unique` (number),
+                KEY `fk_mod_achievement_student_grade_id` (grade_id),
+                KEY `fk_mod_achievement_student_class_id` (class_id),
+                CONSTRAINT `fk_mod_achievement_student_grade_id` FOREIGN KEY (grade_id) REFERENCES mod_achievement_grade (id) ON DELETE SET NULL ON UPDATE NO ACTION,
+                CONSTRAINT `fk_mod_achievement_student_class_id` FOREIGN KEY (class_id) REFERENCES mod_achievement_class (id) ON DELETE SET NULL ON UPDATE NO ACTION
+            )
+            ENGINE = InnoDB
+            AUTO_INCREMENT = 1
+            DEFAULT CHARSET = utf8
+            COLLATE = utf8_unicode_ci
+            COMMENT = '考生表';
+        </query>
+        <query>
+            CREATE TABLE IF NOT EXISTS mod_achievement_subject (
+                id int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                name varchar(100) NOT NULL,
+                title varchar(100) NOT NULL,
+                ordering INT(11) NOT NULL DEFAULT 0,
+                PRIMARY KEY (id),
+                UNIQUE KEY `name_unique` (name)
+            )
+            ENGINE = InnoDB
+            AUTO_INCREMENT = 1
+            DEFAULT CHARSET = utf8
+            COLLATE = utf8_unicode_ci
+            COMMENT = '学科表';
+        </query>
+        <query>
+            CREATE TABLE IF NOT EXISTS mod_achievement_exam (
+            id int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+            name varchar(100) NOT NULL,
+            start_date date NOT NULL,
+            PRIMARY KEY (id)
+            )
+            ENGINE = InnoDB
+            AUTO_INCREMENT = 1
+            DEFAULT CHARSET = utf8
+            COLLATE = utf8_unicode_ci
+            COMMENT = '考次表';
+        </query>
+        <query>
+            CREATE TABLE IF NOT EXISTS mod_achievement_achieve (
+                student_id int(11) UNSIGNED NOT NULL,
+                subject_id int(11) UNSIGNED NOT NULL,
+                exam_id int(11) UNSIGNED NOT NULL,
+                score int(3) UNSIGNED NOT NULL DEFAULT 0,
+                PRIMARY KEY (student_id, subject_id, exam_id),
+                KEY `fk_mod_achievement_achieve_student_id` (student_id),
+                KEY `fk_mod_achievement_achieve_subject_id` (subject_id),
+                KEY `fk_mod_achievement_achieve_exam_id` (exam_id),
+                CONSTRAINT `fk_mod_achievement_achieve_student_id` FOREIGN KEY (student_id) REFERENCES mod_achievement_student (id) ON DELETE CASCADE ON UPDATE NO ACTION,
+                CONSTRAINT `fk_mod_achievement_achieve_subject_id` FOREIGN KEY (subject_id) REFERENCES mod_achievement_subject (id) ON DELETE CASCADE ON UPDATE NO ACTION,
+                CONSTRAINT `fk_mod_achievement_achieve_exam_id` FOREIGN KEY (exam_id) REFERENCES mod_achievement_exam (id) ON DELETE CASCADE ON UPDATE NO ACTION
+            )
+            ENGINE = InnoDB
+            DEFAULT CHARSET = utf8
+            COLLATE = utf8_unicode_ci
+            COMMENT = '考分表';
+        </query>
+    </tables>
+
+    <content>
+        <query>
+            INSERT IGNORE INTO mod_achievement_subject (id, name, title, ordering)
+            VALUES
+            (1, 'chinese', '语文', 1),
+            (2, 'math', '数学', 2),
+            (3, 'english', '英语', 3),
+            (4, 'physics', '物理', 4),
+            (5, 'chemistry', '化学', 5),
+            (6, 'biology', '生物', 6),
+            (7, 'polity', '政治', 7),
+            (8, 'history', '历史', 8),
+            (9, 'geography', '地理', 9);
+        </query>
+    </content>
+</sql>

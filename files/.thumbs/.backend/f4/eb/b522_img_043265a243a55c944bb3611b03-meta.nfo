@@ -1,0 +1,82 @@
+<?php
+
+// legal URL: /img_04.jpg
+
+$statdata = array (
+  0 => 2055,
+  1 => 5382540,
+  2 => 33206,
+  3 => 1,
+  4 => 1000,
+  5 => 1000,
+  6 => 0,
+  7 => 68997,
+  8 => 1419166662,
+  9 => 1419011935,
+  10 => 1419011935,
+  11 => 4096,
+  12 => 136,
+  'dev' => 2055,
+  'ino' => 5382540,
+  'mode' => 33206,
+  'nlink' => 1,
+  'uid' => 1000,
+  'gid' => 1000,
+  'rdev' => 0,
+  'size' => 68997,
+  'atime' => 1419166662,
+  'mtime' => 1419011935,
+  'ctime' => 1419011935,
+  'blksize' => 4096,
+  'blocks' => 136,
+);
+
+$data = array (
+  'mime_type' => 'image/jpeg',
+  'analysis' => 
+  array (
+    'GETID3_VERSION' => '1.9.3-20111213',
+    'filesize' => 68997,
+    'filename' => 'img_04.jpg',
+    'filepath' => '/www/school/files',
+    'filenamepath' => '/www/school/files/img_04.jpg',
+    'avdataoffset' => 0,
+    'avdataend' => 68997,
+    'fileformat' => 'jpg',
+    'video' => 
+    array (
+      'dataformat' => 'jpg',
+      'lossless' => false,
+      'bits_per_sample' => 24,
+      'pixel_aspect_ratio' => 1,
+      'resolution_x' => 300,
+      'resolution_y' => 200,
+      'compression_ratio' => 0.38331666666666669,
+    ),
+    'encoding' => 'UTF-8',
+    'mime_type' => 'image/jpeg',
+  ),
+  'mime_type from file extension' => 'image/jpeg',
+  'thumb250_direct' => '/files/.thumbs/.backend/f4/eb/b522_img_043265a243a55c944bb3611b03-500x500.jpg',
+  'thumb250_info' => 
+  array (
+    0 => 300,
+    1 => 200,
+    2 => 2,
+    3 => 'width="300" height="200"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+  'thumb48_direct' => '/files/.thumbs/.backend/f4/eb/b522_img_043265a243a55c944bb3611b03-120x120.jpg',
+  'thumb48_info' => 
+  array (
+    0 => 120,
+    1 => 80,
+    2 => 2,
+    3 => 'width="120" height="80"',
+    'bits' => 8,
+    'channels' => 3,
+    'mime' => 'image/jpeg',
+  ),
+);
