@@ -126,6 +126,16 @@
             $.ajax({
                 url: achieve_url + params,
                 dataType: 'json',
+                beforeSend: function(){
+                    //prevent of the global setting being overriden
+                    $.ajaxSettings.beforeSend();
+                    $('#achieveQueryButton').attr('disabled', 'disabled');
+                },
+                complete: function(){
+                    //prevent of the global setting being overriden
+                    $.ajaxSettings.complete();
+                    $('#achieveQueryButton').removeAttr('disabled');
+                },
                 success: function(achieves){
                     if(achieves.length == 0)
                     {
